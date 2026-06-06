@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>DevDigest</h1>
 
-## Getting Started
+<p>
+  DevDigest is a modern developer-focused news platform that helps users stay updated with the latest trends in technology, AI, web development, startups, cybersecurity, cloud computing, and software engineering.
+</p>
 
-First, run the development server:
+<p>
+  The platform aggregates news from multiple sources and presents them in a clean, fast, and user-friendly interface. Users can browse trending articles, search for topics, explore categories, and save important content for later reading.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2>✨ Features</h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<ul>
+  <li>📰 Latest Tech & AI News</li>
+  <li>🔍 Search Articles by Keywords</li>
+  <li>🏷️ Category-Based News Filtering</li>
+  <li>📈 Trending Topics Section</li>
+  <li>❤️ Bookmark Articles</li>
+  <li>👤 User Authentication</li>
+  <li>🌙 Dark/Light Mode</li>
+  <li>🤖 AI-Powered Article Summaries</li>
+  <li>📱 Fully Responsive Design</li>
+</ul>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2>🛠️ Tech Stack</h2>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h3>Frontend</h3>
 
-## Learn More
+<ul>
+  <li>Next.js</li>
+  <li>TypeScript</li>
+  <li>Tailwind CSS</li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+<h3>Backend</h3>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<ul>
+  <li>Node.js</li>
+  <li>Express.js</li>
+</ul>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<h3>APIs</h3>
 
-## Deploy on Vercel
+<ul>
+  <li>News API / GNews API</li>
+</ul>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h2>🎯 Project Goal</h2>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p>
+  The goal of DevDigest is to provide developers and tech enthusiasts with a single platform to discover, track, and understand important technology updates without having to visit multiple websites.
+</p>
+
+<p>
+  It also serves as a practical full-stack project for learning modern web development concepts, including API integration, authentication, database management, backend development, and AI-powered features.
+</p>
