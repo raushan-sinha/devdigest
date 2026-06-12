@@ -4,21 +4,21 @@ export const NavLinks: NavbarLinksProps[] = [
     {
         id: 1,
         title: "Home",
-        link: "/"
+        href: "/"
     },
     {
         id: 2,
         title: "Tech News",
-        link: "/tech-news",
+        href: "/tech-news",
     },
     {
         id: 3,
         title: "AI",
-        link: "/ai",
+        href: "/ai",
     },
     {
         id: 4,
         title: "Jobs",
-        link: "/jobs",
+        href: "/jobs",
     },
 ]
