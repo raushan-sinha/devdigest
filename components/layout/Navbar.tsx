@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const navTitle: string = 'DevDigest'
+
 export default function Navbar() {
     return (
         <header className="border-b">
@@ -9,7 +11,7 @@ export default function Navbar() {
                     href="/"
                     className="text-xl font-bold tracking-tight"
                 >
-                    DevDigest
+                    {navTitle}
                 </Link>
 
                 {/* Navigation */}
@@ -17,24 +19,6 @@ export default function Navbar() {
                     <li>
                         <Link href="/" className="hover:text-blue-600">
                             Home
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/tech-news" className="hover:text-blue-600">
-                            Tech News
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/ai" className="hover:text-blue-600">
-                            AI
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/jobs" className="hover:text-blue-600">
-                            Jobs
                         </Link>
                     </li>
                 </ul>
