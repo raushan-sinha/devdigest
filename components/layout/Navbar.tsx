@@ -1,3 +1,4 @@
+import { NavLinks } from "@/data/navbarLinks";
 import Link from "next/link";
 
 const navTitle: string = 'DevDigest'
@@ -16,11 +17,13 @@ export default function Navbar() {
 
                 {/* Navigation */}
                 <ul className="flex items-center gap-8 text-sm font-medium">
-                    <li>
-                        <Link href="/" className="hover:text-blue-600">
-                            Home
-                        </Link>
-                    </li>
+                    {NavLinks.map((link) => (
+                        <li key={link.id}>
+                            <Link href={link.href} className="hover:text-blue-600">
+                                {link.title}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
