@@ -41,12 +41,13 @@ export default function MobileNavbar() {
             {/* Menu Links */}
             {menuOpen && (
                 <div className="absolute left-4 right-4 top-20 rounded-2xl border bg-[#101923] p-3 shadow-lg">
-                    <ul className="flex flex-col gap-1">
+                    <ul className="flex flex-col gap-2">
                         {NavLinks.map((link) => (
                             <li key={link.id}>
                                 <Link
                                     href={link.href}
-                                    className="block rounded-xl px-4 py-3 text-sm font-medium transition hover:bg-gray-100"
+                                    className="block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-medium text-slate-100 transition-all duration-200 hover:bg-slate-700"
+                                    onClick={() => setMenuOpen(false)}
                                 >
                                     {link.title}
                                 </Link>
