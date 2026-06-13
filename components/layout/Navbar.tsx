@@ -10,13 +10,13 @@ export default function Navbar() {
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="text-xl font-bold tracking-tight"
+                    className="text-xl font-bold font-mono font-medium tracking-tight"
                 >
                     {navTitle}
                 </Link>
 
                 {/* Navigation */}
-                <ul className="flex items-center gap-8 text-sm font-medium">
+                <ul className="flex items-center gap-10 text-sm font-mono font-medium">
                     {NavLinks.map((link) => (
                         <li key={link.id}>
                             <Link href={link.href} className="hover:text-blue-600">
