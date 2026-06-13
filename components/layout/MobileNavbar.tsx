@@ -2,12 +2,14 @@
 
 import { NavLinks } from "@/data/navbarLinks";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 
 export default function MobileNavbar() {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    const pathName = usePathname();
 
     return (
         <header className="border-b">
@@ -46,7 +48,7 @@ export default function MobileNavbar() {
                             <li key={link.id}>
                                 <Link
                                     href={link.href}
-                                    className="block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-medium text-slate-100 transition-all duration-200 hover:bg-slate-700"
+                                    className={`${pathName === link.href ? "text-blue-600 font-semibold" : "text-gray-300"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     {link.title}
