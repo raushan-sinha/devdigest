@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TrendingNews() {
     return (
-        <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <section className="px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-[#cbf4df] to-[#f0fcf5]">
             <div className="mx-auto max-w-7xl">
                 <div className="mb-10 flex items-center justify-between">
                     <div>
