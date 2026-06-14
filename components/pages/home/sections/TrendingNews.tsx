@@ -1,3 +1,4 @@
+import { trendingNewsData } from "@/data/trendingNews";
 import Link from "next/link";
 
 export default function TrendingNews() {
@@ -17,26 +18,28 @@ export default function TrendingNews() {
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    <article className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                        <span className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-                            Technology
-                        </span>
+                    {trendingNewsData.map((news) => (
+                        <article key={news.id} className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                            <span className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
+                                {news.category}
+                            </span>
 
-                        <h3 className="mt-4 text-xl font-semibold leading-snug text-slate-900">
-                            Next.js Continues to Shape the Future of Full-Stack Web Development
-                        </h3>
+                            <h3 className="mt-4 text-xl font-semibold leading-snug text-slate-900">
+                                {news.title}
+                            </h3>
 
-                        <p className="mt-3 text-sm leading-6 text-slate-600">
-                            Explore the latest improvements and features driving modern web applications and developer experiences.
-                        </p>
+                            <p className="mt-3 text-sm leading-6 text-slate-600">
+                                {news.description}
+                            </p>
 
-                        <Link
-                            href="/tech-news"
-                            className="mt-6 inline-flex items-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-slate-800"
-                        >
-                            Show News
-                        </Link>
-                    </article>
+                            <Link
+                                href="/tech-news"
+                                className="mt-6 inline-flex items-center rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-slate-800"
+                            >
+                                Show News
+                            </Link>
+                        </article>
+                    ))}
                 </div>
             </div>
         </section>
