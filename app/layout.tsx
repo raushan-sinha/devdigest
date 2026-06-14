@@ -31,7 +31,7 @@ export default function RootLayout({
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
         >
-            <body className="min-h-full flex flex-col">
+            <body className="min-h-full flex flex-col bg-gradient-to-br from-indigo-50 via-white to-cyan-100">
                 <header>
                     <div className="hidden md:block">
                         <Navbar />
