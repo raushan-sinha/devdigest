@@ -17,7 +17,7 @@ export default function MobileNavbar() {
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="text-xl font-bold tracking-tight sm:text-2xl"
+                    className="text-xl font-bold font-mono font-medium tracking-tight sm:text-2xl"
                 >
                     DevDigest
                 </Link>
@@ -48,7 +48,7 @@ export default function MobileNavbar() {
                             <li key={link.id}>
                                 <Link
                                     href={link.href}
-                                    className={`${pathName === link.href ? "text-blue-600 font-semibold" : "text-gray-300"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
+                                    className={`${pathName === link.href ? "text-blue-600 font-semibold font-mono" : "text-gray-300"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     {link.title}
