@@ -41,6 +41,14 @@ export default function TrendingNews() {
                         </article>
                     ))}
                 </div>
+                <div className="mt-10 flex justify-center">
+                    <Link
+                        href="/tech-news"
+                        className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                    >
+                        Explore More News
+                    </Link>
+                </div>
             </div>
         </section>
     )
