@@ -27,10 +27,7 @@ export default function MobileNavbar() {
                     type="button"
                     aria-label="Open Menu"
                     className="relative z-50 flex h-10 w-10 items-center justify-center border-2 rounded-xl"
-                    onClick={() => {
-                        console.log('Clicked');
-                        setMenuOpen(!menuOpen)
-                    }}
+                    onClick={() => setMenuOpen(!menuOpen)}
                 >
                     {menuOpen ? (
                         <RxCross2 size={30} />
@@ -48,7 +45,7 @@ export default function MobileNavbar() {
                             <li key={link.id}>
                                 <Link
                                     href={link.href}
-                                    className={`${pathName === link.href ? "text-blue-600 font-semibold font-mono" : "text-gray-300"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
+                                    className={`${pathName === link.href ? "text-blue-600 font-semibold font-mono" : "text-gray-300 font-mono font-medium"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     {link.title}
