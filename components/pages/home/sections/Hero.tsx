@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
     return (
         <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20">
@@ -11,11 +13,12 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-8">
-                    <button
+                    <Link
+                    href='/tech-news'
                         className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
                     >
                         Explore Latest News
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>
