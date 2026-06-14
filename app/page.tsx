@@ -1,7 +1,9 @@
-export default function Home() {
+import Home from "@/components/pages/home/Home";
+
+export default function MainPage() {
     return (
-        <main className="min-h-screen bg-[#cbf3f0]">
-            <h1>Home Page</h1>
-        </main>
+        <>
+            <Home />
+        </>
     );
 }
