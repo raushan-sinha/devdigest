@@ -12,12 +12,12 @@ export default function MobileNavbar() {
     const pathName = usePathname();
 
     return (
-        <header className="border-b">
+        <header className="border-b bg-[#101923]">
             <nav className="mx-auto flex items-center justify-between px-4 py-4 sm:px-6">
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="text-xl font-bold font-mono font-medium tracking-tight sm:text-2xl"
+                    className="text-xl font-bold font-mono font-medium tracking-tight sm:text-2xl text-white"
                 >
                     DevDigest
                 </Link>
@@ -26,7 +26,7 @@ export default function MobileNavbar() {
                 <button
                     type="button"
                     aria-label="Open Menu"
-                    className="relative z-50 flex h-10 w-10 items-center justify-center border-2 rounded-xl"
+                    className="relative z-50 flex h-10 w-10 items-center justify-center border-2 rounded-xl text-white"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
                     {menuOpen ? (
