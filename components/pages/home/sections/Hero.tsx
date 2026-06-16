@@ -14,7 +14,7 @@ export default function Hero() {
 
                 <div className="mt-8">
                     <Link
-                    href='/tech-news'
+                        href='/tech-news'
                         className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
                     >
                         Explore Latest News
