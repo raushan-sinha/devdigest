@@ -24,7 +24,7 @@ export default function Navbar() {
                 <ul className="flex items-center gap-10 text-sm font-mono font-medium">
                     {NavLinks.map((link) => (
                         <li key={link.id}>
-                            <Link href={link.href} className={`${pathName === link.href ? "text-xl text-blue-600 font-extrabold" : "text-white text-xl font-extrabold"} hover:text-blue-600`}>
+                            <Link href={link.href} className={`${pathName === link.href ? "text-yellow-500 font-semibold" : "text-gray-100 font-medium"} text-base transition-colors hover:text-yellow-500`}>
                                 {link.title}
                             </Link>
                         </li>
