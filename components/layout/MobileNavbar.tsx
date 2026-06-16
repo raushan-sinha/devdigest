@@ -45,7 +45,7 @@ export default function MobileNavbar() {
                             <li key={link.id}>
                                 <Link
                                     href={link.href}
-                                    className={`${pathName === link.href ? "text-blue-600 font-semibold font-mono" : "text-gray-300 font-mono font-medium"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
+                                    className={`${pathName === link.href ? "text-yellow-500 font-semibold font-mono" : "text-gray-100 font-mono font-medium"} block rounded-xl bg-slate-800/60 px-4 py-3 text-sm font-mediu transition-all duration-200 hover:bg-slate-700`}
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     {link.title}
