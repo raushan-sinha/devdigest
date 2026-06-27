@@ -1,36 +1,42 @@
 'use client'
-
 import { TechNewsProps } from "@/types/techNews.types"
 import Link from "next/link";
 import { useEffect, useState } from "react"
-import { CgDanger } from "react-icons/cg";
 
 export default function TechNews() {
     const [techNewsData, setTechNewsData] = useState<TechNewsProps[]>([]);
-    // const [error, setError] = useState<string>('');
+    const [error, setError] = useState<string>('');
+
+    const fetchTechNewsResponse = async () => {
+        try {
+            const apiResponse = await fetch('https://devdigest-backend.vercel.app/tech-news/api');
+
+            const responseData = await apiResponse.json();
+
+            console.log('Status:', apiResponse.status);
+            console.log('Data:', responseData);
+
+            if (!apiResponse.ok) {
+                throw new Error(responseData.message);
+            }
+
+            setTechNewsData(responseData);
+        } catch (error) {
+            console.error(error);
+            setError('Check your Network communication.')
+        }
+    };
 
     useEffect(() => {
-        const fetchTechNewsResponse = async () => {
-            try {
-                const apiResponse = await fetch('http://localhost:5000/tech-news/api');
-
-                const responseData = await apiResponse.json();
-
-                if(!apiResponse.ok) throw new Error(responseData.message);
-                setTechNewsData(responseData);
-            } catch (error) {
-                console.error(error);
-            }
-        }
-
         fetchTechNewsResponse();
     }, []);
 
+
     return (
         <>
-            {/* {error && (
-                <p>{error}</p>
-            )} */}
+            {error && (
+                <p className="text-red-500 p-10 font-mono font-bold text-xl">{error}</p>
+            )}
 
             <section aria-label="Latest Technology News" className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:grid-cols-2 xl:grid-cols-3">
                 {techNewsData.map((item) => (
