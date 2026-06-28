@@ -10,15 +10,7 @@ export default function TechNews() {
     const fetchTechNewsResponse = async () => {
         try {
             const apiResponse = await fetch('https://devdigest-backend.vercel.app/tech-news/api');
-
             const responseData = await apiResponse.json();
-
-            console.log('Status:', apiResponse.status);
-            console.log('Data:', responseData);
-
-            if (!apiResponse.ok) {
-                throw new Error(responseData.message);
-            }
 
             setTechNewsData(responseData);
         } catch (error) {
