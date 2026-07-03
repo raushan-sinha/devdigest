@@ -1,4 +1,5 @@
 'use client';
+import { getJobsPostingData } from "@/services/jobsPosting.service";
 import { JobsDataProps } from "@/types/jobsPosting.types";
 import { useEffect, useState } from "react";
 
@@ -8,9 +9,7 @@ export default function Jobs() {
     // Fetch Jobs Posting API -
     const jobsFetching = async () => {
         try {
-            const response = await fetch('http://localhost:5000/jobs/api');
-            if (!response.ok) throw new Error('Failed to fetch API');
-            const data = await response.json();
+            const data = await getJobsPostingData();
             console.log(data);
             setJobsData(data);
         } catch (error) {
