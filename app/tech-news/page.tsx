@@ -15,7 +15,6 @@ export default function TechNews() {
                 setLoading(true);
                 setError('');
                 const data = await getTechNews();
-                console.log(data);
                 setTechNewsData(data);
             } catch (error) {
                 console.error(error);
