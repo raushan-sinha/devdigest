@@ -15,7 +15,7 @@ export default function Jobs() {
             setError('');
             const data = await getJobsPostingData();
             setJobsData(data);
-        } catch (error) {
+        } catch (error: unknown) {
             console.error(error)
             setError('Something went wrong! Check your Network connection.');
         } finally {
