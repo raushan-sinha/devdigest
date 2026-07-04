@@ -31,7 +31,7 @@ export default function Jobs() {
         <>
             {/* Error Message */}
             {error && jobsData.length === 0 && (
-                <p className="className=" text-red-500 p-10 font-mono font-bold text-xl>{error}</p>
+                <p className="text-red-500 p-10 font-mono font-bold text-xl">{error}</p>
             )}
 
             {loading ? (
