@@ -18,7 +18,7 @@ export default function TechNews() {
                 setTechNewsData(data);
             } catch (error) {
                 console.error(error);
-                setError("Error fetching tech news");
+                setError("Something went wrong! Check your Network connection.");
             } finally {
                 setLoading(false);
             }
