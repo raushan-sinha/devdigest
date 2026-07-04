@@ -70,9 +70,9 @@ export default function Jobs() {
                                 </div>
                             </div>
 
-                            <button className="mt-8 w-full rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg" onClick={() => window.open(job.url, '_blank')}>
+                            <a className="mt-8 w-full rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg" href={job.url} target="_blank" rel="noopener noreferrer">
                                 Apply Now
-                            </button>
+                            </a>
                         </article>
                     ))}
                 </section>
