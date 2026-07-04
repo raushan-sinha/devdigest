@@ -10,7 +10,6 @@ export default function Jobs() {
     const jobsFetching = async () => {
         try {
             const data = await getJobsPostingData();
-            console.log(data);
             setJobsData(data);
         } catch (error) {
             console.error(error)
