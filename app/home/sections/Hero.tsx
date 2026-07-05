@@ -2,25 +2,86 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20">
-            <div className="bg-[#ff9f1c] mx-auto max-w-4xl rounded-2xl p-8 text-center shadow-xl">
-                <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-                    Stay Ahead in Tech, AI, and Developer Trends
-                </h1>
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 px-4 py-20 sm:px-6 lg:px-8">
+            <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-500/20 blur-[120px]" />
+            <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-cyan-400/20 blur-[120px]" />
 
-                <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg">
-                    Discover the latest technology news, AI breakthroughs, developer tools, software engineering insights, startup updates, and career opportunities—all in one place.
-                </p>
+            <div className="relative mx-auto max-w-6xl">
 
-                <div className="mt-8">
-                    <Link
-                        href='/tech-news'
-                        className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
-                    >
-                        Explore Latest News
-                    </Link>
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-2xl sm:p-12 lg:p-16">
+
+                    <span className="inline-flex rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1 text-sm font-medium text-blue-300">
+                        🚀 Trusted by Developers & Tech Enthusiasts
+                    </span>
+
+                    <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+                        Stay Ahead in
+                        <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                            {" "}Technology & AI
+                        </span>
+                    </h1>
+
+                    <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg lg:text-xl">
+                        Discover breaking technology news, AI innovations, software engineering
+                        insights, developer tools, startup updates, cybersecurity trends, cloud
+                        computing, and career opportunities—all curated in one fast, modern,
+                        and developer-first platform.
+                    </p>
+
+                    <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+
+                        <Link
+                            href="/tech-news"
+                            className="rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                        >
+                            Explore Latest News →
+                        </Link>
+
+                        <Link
+                            href="/jobs"
+                            className="rounded-xl border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur transition-all duration-300 hover:bg-white/10"
+                        >
+                            Browse Tech Jobs
+                        </Link>
+
+                    </div>
+
+                    <div className="mt-14 grid grid-cols-2 gap-4 text-center sm:grid-cols-4">
+
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            <h3 className="text-3xl font-bold text-cyan-400">AI</h3>
+                            <p className="mt-2 text-sm text-slate-300">
+                                Latest breakthroughs
+                            </p>
+                        </div>
+
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            <h3 className="text-3xl font-bold text-blue-400">Tech</h3>
+                            <p className="mt-2 text-sm text-slate-300">
+                                Daily updates
+                            </p>
+                        </div>
+
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            <h3 className="text-3xl font-bold text-green-400">Jobs</h3>
+                            <p className="mt-2 text-sm text-slate-300">
+                                Career opportunities
+                            </p>
+                        </div>
+
+                        <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                            <h3 className="text-3xl font-bold text-purple-400">Tools</h3>
+                            <p className="mt-2 text-sm text-slate-300">
+                                Developer resources
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
     )
 }
