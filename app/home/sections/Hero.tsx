@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 px-4 py-20 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 px-4 py-10 sm:px-6 lg:px-8">
             <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-500/20 blur-[120px]" />
             <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-cyan-400/20 blur-[120px]" />
 
@@ -14,7 +14,7 @@ export default function Hero() {
                         🚀 Trusted by Developers & Tech Enthusiasts
                     </span>
 
-                    <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+                    <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl lg:whitespace-nowrap">
                         Stay Ahead in
                         <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                             {" "}Technology & AI
@@ -56,7 +56,7 @@ export default function Hero() {
                         </div>
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                            <h3 className="text-3xl font-bold text-blue-400">Tech</h3>
+                            <h3 className="text-3xl font-bold text-blue-400">Tech News</h3>
                             <p className="mt-2 text-sm text-slate-300">
                                 Daily updates
                             </p>
