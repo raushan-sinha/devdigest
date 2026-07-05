@@ -1,6 +1,7 @@
-export interface TrendingNewsProps {
+export interface TrendingTechNewsProps {
     id: number,
-    category: string,
     title: string,
-    description: string
+    description: string,
+    content: string,
+    url: string,
 }
