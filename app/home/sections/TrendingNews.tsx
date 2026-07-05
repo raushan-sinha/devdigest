@@ -1,7 +1,29 @@
+'use client';
 import { trendingNewsData } from "@/data/trendingNews";
+import { getTechNews } from "@/services/techNews.service";
+import { TrendingTechNewsProps } from "@/types/trendingNews.types";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function TrendingNews() {
+    const [trendingTechNews, setTrendingTechNews] = useState<TrendingTechNewsProps[]>([]);
+
+    //todo: Trending Tech News logic for showing only 3 news -
+    const loadTrendingTechNews = async () => {
+        try {
+            const techNewsData = await getTechNews();
+            console.log(techNewsData.slice(0, 3));
+            setTrendingTechNews(techNewsData);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    useEffect(() => {
+        loadTrendingTechNews();
+    }, []);
+
+
     return (
         <section className="px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-b from-[#cbf4df] to-[#f0fcf5]">
             <div className="mx-auto max-w-7xl">
@@ -18,10 +40,10 @@ export default function TrendingNews() {
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {trendingNewsData.map((news) => (
+                    {trendingTechNews.slice(0, 3).map((news) => (
                         <article key={news.id} className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                             <span className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-                                {news.category}
+                                Tech News
                             </span>
 
                             <h3 className="mt-4 text-xl font-semibold leading-snug text-slate-900">
