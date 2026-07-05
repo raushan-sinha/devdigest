@@ -1,5 +1,4 @@
 'use client';
-import { trendingNewsData } from "@/data/trendingNews";
 import { getTechNews } from "@/services/techNews.service";
 import { TrendingTechNewsProps } from "@/types/trendingNews.types";
 import Link from "next/link";
