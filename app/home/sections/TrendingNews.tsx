@@ -79,7 +79,9 @@ export default function TrendingNews() {
                             </p>
 
                             <Link
-                                href="/tech-news"
+                                href={news.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="mt-8 inline-flex w-fit items-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
                             >
                                 Read Article →
