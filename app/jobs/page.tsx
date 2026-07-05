@@ -39,8 +39,8 @@ export default function Jobs() {
             ) : (
                 <section aria-label="Latest Technology News" className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:grid-cols-2 xl:grid-cols-3">
                     {jobsData.map((job) => (
-                        <article key={job.id.toString()} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                            <span className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
+                        <article key={job.id.toString()} className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                            <span className="inline-flex w-fit rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
                                 Job Role
                             </span>
 
@@ -48,7 +48,7 @@ export default function Jobs() {
                                 {job.title}
                             </h2>
 
-                            <div className="mt-6 space-y-3 text-sm">
+                            <div className="mt-6 flex-1 space-y-3 text-sm">
                                 <div className="flex items-center justify-between rounded-xl bg-slate-50 px-4 py-3">
                                     <span className="font-medium text-slate-500">Company</span>
                                     <span className="font-semibold text-slate-900">{job.company_name}</span>
@@ -70,9 +70,16 @@ export default function Jobs() {
                                 </div>
                             </div>
 
-                            <a className="mt-8 w-full rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 font-semibold text-white shadow-md transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg" href={job.url} target="_blank" rel="noopener noreferrer">
-                                Apply Now
-                            </a>
+                            <footer className="mt-6 border-t border-slate-100 pt-6">
+                                <a
+                                    className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3.5 font-semibold text-white shadow-md transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg"
+                                    href={job.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Apply Now
+                                </a>
+                            </footer>
                         </article>
                     ))}
                 </section>
