@@ -31,28 +31,28 @@ export default function Hero() {
                     <div className="mt-14 grid grid-cols-2 gap-4 text-center sm:grid-cols-4">
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                            <h3 className="text-3xl font-bold text-cyan-400">AI</h3>
+                            <h2 className="text-xl lg:text-2xl font-bold text-cyan-400">AI</h2>
                             <p className="mt-2 text-sm text-slate-300">
                                 Latest breakthroughs
                             </p>
                         </div>
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                            <h3 className="text-3xl font-bold text-blue-400">Tech News</h3>
+                            <h2 className="text-xl lg:text-2xl font-bold text-blue-400 whitespace-nowrap">Tech News</h2>
                             <p className="mt-2 text-sm text-slate-300">
                                 Daily updates
                             </p>
                         </div>
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                            <h3 className="text-3xl font-bold text-green-400">Jobs</h3>
+                            <h2 className="text-xl lg:text-2xl font-bold text-green-400">Jobs</h2>
                             <p className="mt-2 text-sm text-slate-300">
                                 Career opportunities
                             </p>
                         </div>
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                            <h3 className="text-3xl font-bold text-purple-400">Tools</h3>
+                            <h2 className="text-xl lg:text-2xl font-bold text-purple-400">Tools</h2>
                             <p className="mt-2 text-sm text-slate-300">
                                 Developer resources
                             </p>
