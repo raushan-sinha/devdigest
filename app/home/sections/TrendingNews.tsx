@@ -11,7 +11,6 @@ export default function TrendingNews() {
     const loadTrendingTechNews = async () => {
         try {
             const techNewsData = await getTechNews();
-            console.log(techNewsData.slice(0, 3));
             setTrendingTechNews(techNewsData);
         } catch (error) {
             console.error(error);
