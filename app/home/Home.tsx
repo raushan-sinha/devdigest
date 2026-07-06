@@ -1,10 +1,10 @@
-import { Hero, TrendingNews } from "./sections";
+import { HeroSection, TechNewsSection } from "./sections";
 
 export default function Home() {
     return (
         <>
-            <Hero />
-            <TrendingNews />
+            <HeroSection />
+            <TechNewsSection />
         </>
     )
 }
