@@ -28,24 +28,6 @@ export default function Hero() {
                         and developer-first platform.
                     </p>
 
-                    <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-
-                        <Link
-                            href="/tech-news"
-                            className="rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
-                        >
-                            Explore Latest News →
-                        </Link>
-
-                        <Link
-                            href="/jobs"
-                            className="rounded-xl border border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur transition-all duration-300 hover:bg-white/10"
-                        >
-                            Browse Tech Jobs
-                        </Link>
-
-                    </div>
-
                     <div className="mt-14 grid grid-cols-2 gap-4 text-center sm:grid-cols-4">
 
                         <div className="rounded-xl border border-white/10 bg-white/5 p-5">
