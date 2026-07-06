@@ -24,7 +24,14 @@ export default function Navbar() {
                 <ul className="flex items-center gap-10 text-sm font-mono font-medium">
                     {NavLinks.map((link) => (
                         <li key={link.id}>
-                            <Link href={link.href} className={`${pathName === link.href ? "text-yellow-500 font-semibold" : "text-gray-100 font-medium"} text-base transition-colors hover:text-yellow-500`}>
+                            <Link
+                                href={link.href}
+                                className={`relative inline-block pb-1.5 text-base transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:rounded-full after:bg-yellow-500 after:transition-all after:duration-300 ${
+                                    pathName === link.href
+                                        ? "font-semibold text-yellow-500 after:w-full after:shadow-[0_0_10px_rgba(234,179,8,0.75)]"
+                                        : "font-medium text-gray-100 after:w-0 hover:text-yellow-500 hover:after:w-full"
+                                }`}
+                            >
                                 {link.title}
                             </Link>
                         </li>
