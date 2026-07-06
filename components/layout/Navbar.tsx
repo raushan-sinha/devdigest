@@ -10,7 +10,7 @@ export default function Navbar() {
     const pathName = usePathname();
 
     return (
-        <header className="border-b bg-[#101923]">
+        <header className="sticky top-0 z-50 border-b border-white/10 bg-gradient-to-r from-slate-950/90 via-slate-900/85 to-slate-950/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
                 {/* Logo */}
                 <Link
