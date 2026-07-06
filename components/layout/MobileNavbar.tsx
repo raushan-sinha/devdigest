@@ -39,7 +39,7 @@ export default function MobileNavbar() {
 
             {/* Menu Links */}
             {menuOpen && (
-                <div className="absolute left-4 right-4 top-20 rounded-2xl border bg-[#101923] p-3 shadow-lg">
+                <div className="absolute left-4 right-4 top-20 rounded-2xl border bg-gradient-to-r from-slate-950/90 via-slate-900/85 to-slate-950/90 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.35)] p-3 shadow-lg">
                     <ul className="flex flex-col gap-2">
                         {NavLinks.map((link) => (
                             <li key={link.id}>
