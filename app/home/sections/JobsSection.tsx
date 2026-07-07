@@ -106,9 +106,9 @@ export default function JobsSection() {
                         professional journey with DevDigest.
                     </p>
 
-                    <button className="mt-8 rounded-2xl bg-gradient-to-r from-green-500 via-cyan-500 to-blue-600 px-8 py-4 font-semibold text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                    <Link href='/jobs' className="mt-8 rounded-2xl bg-gradient-to-r from-green-500 via-cyan-500 to-blue-600 px-8 py-4 font-semibold text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
                         Explore All Jobs →
-                    </button>
+                    </Link>
 
                 </div>
 
