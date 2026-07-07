@@ -94,21 +94,26 @@ export default function JobsSection() {
                 </div>
 
                 {/* Bottom CTA */}
-                <div className="mt-16 rounded-3xl border border-cyan-400/20 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-green-500/10 p-10 text-center backdrop-blur-xl">
+                <div className="mt-16 rounded-3xl border border-cyan-400/20 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-green-500/10 p-6 text-center backdrop-blur-xl sm:p-10">
 
-                    <h3 className="text-3xl font-bold text-white">
+                    <h3 className="text-2xl font-bold text-white sm:text-3xl">
                         Ready to Find Your Next Opportunity?
                     </h3>
 
-                    <p className="mx-auto mt-4 max-w-2xl text-slate-300">
+                    <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-300 sm:text-base">
                         Explore the latest software engineering opportunities, discover
                         companies hiring today, and take the next step in your
                         professional journey with DevDigest.
                     </p>
 
-                    <Link href='/jobs' className="mt-8 rounded-2xl bg-gradient-to-r from-green-500 via-cyan-500 to-blue-600 px-8 py-4 font-semibold text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-                        Explore All Jobs →
-                    </Link>
+                    <div className="mt-8 flex justify-center">
+                        <Link
+                            href="/jobs"
+                            className="inline-flex w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-r from-green-500 via-cyan-500 to-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl sm:w-auto sm:px-8 sm:py-4 sm:text-base"
+                        >
+                            Explore All Jobs →
+                        </Link>
+                    </div>
 
                 </div>
 
