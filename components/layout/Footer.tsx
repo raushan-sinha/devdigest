@@ -129,7 +129,7 @@ export default function Footer() {
                 <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-center text-sm text-slate-400 sm:flex-row">
 
                     <p>
-                        © 2026 DevDigest. All rights reserved.
+                        &copy; {new Date().getFullYear()} DevDigest. All rights reserved.
                     </p>
 
                     <p>
