@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="relative overflow-hidden border-t border-white/10 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 px-4 pt-16 sm:px-6 lg:px-8">
@@ -13,9 +15,9 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div>
-                        <h2 className="text-3xl font-black text-white">
+                        <Link href='/' className="text-3xl font-black text-white">
                             Dev<span className="text-cyan-400">Digest</span>
-                        </h2>
+                        </Link>
 
                         <p className="mt-5 max-w-sm text-sm leading-7 text-slate-300">
                             A developer-first platform delivering the latest technology
