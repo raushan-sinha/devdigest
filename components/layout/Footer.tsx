@@ -1,4 +1,4 @@
-import { PLATFORM_LINKS } from "@/data/footerLinks";
+import { DEVELOPER_PLATFORM_LINKS, PLATFORM_LINKS } from "@/data/footerLinks";
 import Link from "next/link";
 
 export default function Footer() {
@@ -78,37 +78,13 @@ export default function Footer() {
                         </h3>
 
                         <ul className="mt-5 space-y-3 text-sm text-slate-300">
-
-                            <li>
-                                <a href="#" className="transition hover:text-cyan-400">
-                                    Web Development
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" className="transition hover:text-cyan-400">
-                                    AI & Machine Learning
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" className="transition hover:text-cyan-400">
-                                    Cloud Computing
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" className="transition hover:text-cyan-400">
-                                    Cybersecurity
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" className="transition hover:text-cyan-400">
-                                    Open Source
-                                </a>
-                            </li>
-
+                            {DEVELOPER_PLATFORM_LINKS.map((link) => (
+                                <li key={link.id}>
+                                    <Link href={link.url} className="transition hover:text-cyan-400">
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
