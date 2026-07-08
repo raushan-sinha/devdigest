@@ -153,6 +153,9 @@ export default function Footer() {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
+                                id="email"
+                                name="email"
+                                autoComplete="on"
                                 className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-400 focus:border-cyan-400"
                             />
 
