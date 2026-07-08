@@ -113,7 +113,7 @@ export default function Footer() {
                             />
 
                             <button
-                                className="rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:scale-[1.02]"
+                                className="rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:scale-[1.02] cursor-pointer"
                             >
                                 Subscribe
                             </button>
