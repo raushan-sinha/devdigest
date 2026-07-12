@@ -1,4 +1,4 @@
-import { DEVELOPER_PLATFORM_LINKS, PLATFORM_LINKS } from "@/data/footerLinks";
+import { DEVELOPER_PLATFORM_LINKS, PLATFORM_LINKS, SOCIAL_LINKS } from "@/data/footerLinks";
 import Link from "next/link";
 
 export default function Footer() {
@@ -27,28 +27,19 @@ export default function Footer() {
                         </p>
 
                         <div className="mt-6 flex gap-3">
-
-                            <a
-                                href="#"
-                                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20"
-                            >
-                                X
-                            </a>
-
-                            <a
-                                href="#"
-                                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20"
-                            >
-                                GH
-                            </a>
-
-                            <a
-                                href="#"
-                                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20"
-                            >
-                                IN
-                            </a>
-
+                            {SOCIAL_LINKS.map((link) => {
+                                const Icon = link.icon;
+                                return (
+                                    <Link
+                                        key={link.id}
+                                        href={link.url}
+                                        target="_blank"
+                                        className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20"
+                                    >
+                                        <Icon size={link.size} />
+                                    </Link>
+                                )
+                            })}
                         </div>
                     </div>
 
