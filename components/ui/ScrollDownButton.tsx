@@ -25,8 +25,16 @@ export default function ScrollDownButton() {
 
     if(!showArrow) return null;
 
+    // Click to Arrow to render on Last Screen -
+    const scrollDown = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+
     return (
-        <button className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-r from-cyan-500 to-blue-600 text-white shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer">
+        <button onClick={scrollDown} className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-linear-to-r from-cyan-500 to-blue-600 text-white shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer">
             <FaArrowDown />
         </button>
     );
