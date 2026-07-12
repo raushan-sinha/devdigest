@@ -1,4 +1,12 @@
-import { FooterLinkProps } from "@/types/footerLinks.types";
+import { FooterLinkProps, SocialLinksProps } from "@/types/footerLinks.types";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
+// Social Links -
+export const SOCIAL_LINKS: SocialLinksProps[] = [
+    { id: 1, icon: FaXTwitter, url: 'https://x.com/84Raushan', size: 20 },
+    { id: 2, icon: MdEmail, url: 'mailto:raushankrsinha2004@gmail.com', size: 25 },
+]
 
 // Platform Links -
 export const PLATFORM_LINKS: FooterLinkProps[] = [
