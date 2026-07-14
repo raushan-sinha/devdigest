@@ -35,7 +35,7 @@ export default function TechNews() {
             )}
 
             {loading ? (
-                <p className="text-center p-10 font-mono font-bold text-xl">Fetching Tech News....</p>
+                <p className="text-center p-10 font-mono font-bold text-xl min-h-screen">Fetching Tech News....</p>
             ) : (
                 <section
                     aria-label="Latest Technology News"
