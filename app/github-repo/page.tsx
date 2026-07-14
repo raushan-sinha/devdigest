@@ -56,7 +56,7 @@ export default function GitHubRepo() {
                     {loading ? (
                         <p className="text-center p-10 font-mono font-bold text-xl text-white min-h-screen">Fetching GitHub Repos....</p>
                     ) : (
-                        < div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             {/* Card */}
                             {gitHubRepoData.map((item) => (
                                 <article
