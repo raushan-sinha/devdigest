@@ -4,5 +4,4 @@ export interface GitHubRepoProps {
     description: string,
     techStack: string[],
     githubUrl: string,
-    codeUrl: string,
 }
