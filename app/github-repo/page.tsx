@@ -107,12 +107,6 @@ export default function GitHubRepo() {
                                             className="flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10">
                                             GitHub ↗
                                         </a>
-
-                                        <a
-                                            href={item.codeUrl}
-                                            className="flex-1 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-4 py-3 text-center text-sm font-semibold text-white transition hover:scale-[1.02]">
-                                            View Code
-                                        </a>
                                     </div>
                                 </article>
                             ))}
