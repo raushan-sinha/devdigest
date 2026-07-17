@@ -10,7 +10,7 @@ export default function Jobs() {
     const [loading, setLoading] = useState<boolean>(false);
     const [searchQuery, setSearchQuery] = useState<string>('');
 
-    // Fetch Jobs Posting API -
+    //todo: Fetch Jobs Posting API -
     const jobsFetching = async () => {
         try {
             setLoading(true);
