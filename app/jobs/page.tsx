@@ -47,7 +47,7 @@ export default function Jobs() {
             )}
 
             {loading ? (
-                <p className="text-center p-10 font-mono font-bold text-xl">Fetching Jobs....</p>
+                <p className="text-center p-10 font-mono font-bold text-xl min-h-screen">Fetching Jobs....</p>
             ) : (
                 <div className="mx-auto max-w-7xl px-4 py-8">
                     <div className="mb-6 flex justify-end">
