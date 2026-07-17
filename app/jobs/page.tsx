@@ -2,13 +2,14 @@
 import { getJobsPostingData } from "@/services/jobsPosting.service";
 import { JobsDataProps } from "@/types/jobsPosting.types";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Jobs() {
     const [jobsData, setJobsData] = useState<JobsDataProps[]>([]);
     const [error, setError] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
     const [searchQuery, setSearchQuery] = useState<string>('');
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
     //todo: Fetch Jobs Posting API -
     const jobsFetching = async () => {
@@ -37,6 +38,14 @@ export default function Jobs() {
             job.title.toLowerCase().includes(keyword) || job.company_name.toLowerCase().includes(keyword)
         )
     })
+
+
+    // todo: Input Auto focus on Job searching box -
+    useEffect(() => {
+        if (jobsData.length > 0) {
+            inputRef.current?.focus();
+        }
+    }, [jobsData]);
 
 
     return (
@@ -76,6 +85,7 @@ export default function Jobs() {
                                 type="search"
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
+                                ref={inputRef}
                                 placeholder="Search Jobs by title, company..."
                                 className="w-full rounded-xl border border-slate-200 bg-white py-3 pl-11 pr-4 text-sm text-slate-900 shadow-sm outline-none transition-all duration-300 placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                             />
