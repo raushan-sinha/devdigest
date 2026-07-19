@@ -1,6 +1,6 @@
-import { REACT_ROADMAP_PROPS } from "@/types/reactRoadmap.types";
+import { ROADMAP_CARD_PROPS } from "@/types/reactRoadmap.types";
 
-export const REACT_ROADMAP_DATA: REACT_ROADMAP_PROPS[] = [
+export const REACT_ROADMAP_DATA: ROADMAP_CARD_PROPS[] = [
     {
         id: 1,
         tag: "Fundamentals",
