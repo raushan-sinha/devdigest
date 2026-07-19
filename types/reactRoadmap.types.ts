@@ -1,4 +1,4 @@
-export interface REACT_ROADMAP_PROPS {
+export interface ROADMAP_CARD_PROPS {
     id: number,
     tag: string,
     title: string,
