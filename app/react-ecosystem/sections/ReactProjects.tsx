@@ -1,3 +1,5 @@
+import { REACT_PROJECTS_DATA } from "@/data/reactProjectsData.data";
+
 export default function ReactProjects() {
     return (
         <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 px-4 py-20 sm:px-6 lg:px-8">
@@ -41,60 +43,23 @@ export default function ReactProjects() {
 
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-                        {/* Card 1 */}
-                        <article className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-green-500/10 to-slate-900/80 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-green-400 hover:shadow-[0_20px_60px_rgba(74,222,128,.15)]">
+                        {REACT_PROJECTS_DATA.beginner.map((item) => (
+                            <article key={item.id} className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-green-500/10 to-slate-900/80 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-green-400 hover:shadow-[0_20px_60px_rgba(74,222,128,.15)]">
 
-                            <span className="rounded-full bg-green-500/20 px-3 py-1 text-xs font-semibold text-green-300">
-                                Portfolio
-                            </span>
+                                <span className="rounded-full bg-green-500/20 px-3 py-1 text-xs font-semibold text-green-300">
+                                    {item.tag}
+                                </span>
 
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Personal Portfolio
-                            </h3>
+                                <h3 className="mt-5 text-2xl font-bold text-white">
+                                    {item.title}
+                                </h3>
 
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Create a responsive portfolio website showcasing your
-                                projects, skills, and resume.
-                            </p>
-
-                        </article>
-
-                        {/* Card 2 */}
-                        <article className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-green-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
-
-                            <span className="rounded-full bg-green-500/20 px-3 py-1 text-xs font-semibold text-green-300">
-                                API
-                            </span>
-
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Weather App
-                            </h3>
-
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Build a weather application using a public API with city
-                                search and live weather updates.
-                            </p>
-
-                        </article>
-
-                        {/* Card 3 */}
-                        <article className="rounded-3xl border border-green-500/20 bg-gradient-to-br from-green-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
-
-                            <span className="rounded-full bg-green-500/20 px-3 py-1 text-xs font-semibold text-green-300">
-                                CRUD
-                            </span>
-
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Todo Application
-                            </h3>
-
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Practice state management by creating, editing, and
-                                deleting daily tasks.
-                            </p>
-
-                        </article>
-
+                                <p className="mt-4 leading-7 text-slate-300">
+                                    {item.description}
+                                </p>
+                            </article>
+                        ))}
+                        
                     </div>
 
                 </div>
