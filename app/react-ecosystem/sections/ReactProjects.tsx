@@ -81,7 +81,7 @@ export default function ReactProjects() {
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
                         {REACT_PROJECTS_DATA.intermediate.map((item) => (
-                            <article className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
+                            <article key={item.id} className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
 
                                 <span className="rounded-full bg-yellow-500/20 px-3 py-1 text-xs font-semibold text-yellow-300">
                                     {item.tag}
@@ -117,56 +117,23 @@ export default function ReactProjects() {
 
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-                        <article className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
+                        {REACT_PROJECTS_DATA.advanced.map((item) => (
+                            <article key={item.id} className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
 
-                            <span className="rounded-full bg-red-500/20 px-3 py-1 text-xs font-semibold text-red-300">
-                                AI
-                            </span>
+                                <span className="rounded-full bg-red-500/20 px-3 py-1 text-xs font-semibold text-red-300">
+                                    {item.tag}
+                                </span>
 
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                AI Chat Application
-                            </h3>
+                                <h3 className="mt-5 text-2xl font-bold text-white">
+                                    {item.title}
+                                </h3>
 
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Integrate AI APIs to build a real-time conversational
-                                assistant.
-                            </p>
+                                <p className="mt-4 leading-7 text-slate-300">
+                                    {item.description}
+                                </p>
 
-                        </article>
-
-                        <article className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
-
-                            <span className="rounded-full bg-red-500/20 px-3 py-1 text-xs font-semibold text-red-300">
-                                Collaboration
-                            </span>
-
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Project Management App
-                            </h3>
-
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Build task boards, authentication, collaboration, and
-                                team workflows.
-                            </p>
-
-                        </article>
-
-                        <article className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
-
-                            <span className="rounded-full bg-red-500/20 px-3 py-1 text-xs font-semibold text-red-300">
-                                Social
-                            </span>
-
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Social Media Platform
-                            </h3>
-
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Develop feeds, profiles, comments, likes, messaging,
-                                and authentication.
-                            </p>
-
-                        </article>
+                            </article>
+                        ))}
 
                     </div>
 
