@@ -27,7 +27,7 @@ export default function ReactProjects() {
 
                 </div>
 
-                {/* ================= Beginner ================= */}
+                {/* Beginner */}
 
                 <div className="mb-20">
 
@@ -59,12 +59,12 @@ export default function ReactProjects() {
                                 </p>
                             </article>
                         ))}
-                        
+
                     </div>
 
                 </div>
 
-                {/* ================= Intermediate ================= */}
+                {/* Intermediate */}
 
                 <div className="mb-20">
 
@@ -80,62 +80,28 @@ export default function ReactProjects() {
 
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-                        <article className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
+                        {REACT_PROJECTS_DATA.intermediate.map((item) => (
+                            <article className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
 
-                            <span className="rounded-full bg-yellow-500/20 px-3 py-1 text-xs font-semibold text-yellow-300">
-                                Dashboard
-                            </span>
+                                <span className="rounded-full bg-yellow-500/20 px-3 py-1 text-xs font-semibold text-yellow-300">
+                                    {item.tag}
+                                </span>
 
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Admin Dashboard
-                            </h3>
+                                <h3 className="mt-5 text-2xl font-bold text-white">
+                                    {item.title}
+                                </h3>
 
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Build charts, analytics cards, tables, and responsive
-                                navigation.
-                            </p>
-
-                        </article>
-
-                        <article className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
-
-                            <span className="rounded-full bg-yellow-500/20 px-3 py-1 text-xs font-semibold text-yellow-300">
-                                Shopping
-                            </span>
-
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                E-Commerce Store
-                            </h3>
-
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Create product listings, shopping cart, filtering, and
-                                checkout UI.
-                            </p>
-
-                        </article>
-
-                        <article className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
-
-                            <span className="rounded-full bg-yellow-500/20 px-3 py-1 text-xs font-semibold text-yellow-300">
-                                Finance
-                            </span>
-
-                            <h3 className="mt-5 text-2xl font-bold text-white">
-                                Expense Tracker
-                            </h3>
-
-                            <p className="mt-4 leading-7 text-slate-300">
-                                Track income and expenses with charts and monthly
-                                reports.
-                            </p>
-
-                        </article>
+                                <p className="mt-4 leading-7 text-slate-300">
+                                    {item.description}
+                                </p>
+                            </article>
+                        ))}
 
                     </div>
 
                 </div>
 
-                {/* ================= Advanced ================= */}
+                {/* Advanced */}
 
                 <div>
 
