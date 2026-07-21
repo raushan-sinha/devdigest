@@ -81,7 +81,7 @@ export default function ReactProjects() {
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
                         {REACT_PROJECTS_DATA.intermediate.map((item) => (
-                            <article key={item.id} className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
+                            <article key={item.id} className="rounded-3xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-slate-900/80 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-[0_20px_60px_rgba(250,204,21,0.15)]">
 
                                 <span className="rounded-full bg-yellow-500/20 px-3 py-1 text-xs font-semibold text-yellow-300">
                                     {item.tag}
@@ -118,7 +118,7 @@ export default function ReactProjects() {
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
                         {REACT_PROJECTS_DATA.advanced.map((item) => (
-                            <article key={item.id} className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-500/10 to-slate-900/80 p-7 backdrop-blur-xl">
+                            <article key={item.id} className="rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-500/10 to-slate-900/80 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-red-400 hover:shadow-[0_10px_25px_rgba(239,68,68,0.35)]">
 
                                 <span className="rounded-full bg-red-500/20 px-3 py-1 text-xs font-semibold text-red-300">
                                     {item.tag}
