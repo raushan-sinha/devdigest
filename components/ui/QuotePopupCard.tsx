@@ -15,7 +15,7 @@ export default function QuotePopupCard({ onClose }: QuoteCardProps) {
 
                 {/* Close Button */}
                 <button
-                    className="absolute top-5 right-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all hover:rotate-90 hover:scale-110 hover:bg-white/20 hover:text-white focus:outline-none cursor-pointer"
+                    className="absolute top-5 right-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all duration-300 ease-in-out hover:scale-110 hover:bg-white/20 hover:text-white focus:outline-none"
                     aria-label="Close"
                     onClick={onClose}
                 >
