@@ -1,7 +1,8 @@
 import { IoClose } from 'react-icons/io5';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { QuoteCardProps } from '@/types/quoteCardProps.types';
 
-export default function QuotePopupCard() {
+export default function QuotePopupCard({ onClose }: QuoteCardProps) {
     return (
         <div className="fixed inset-0 z-50 flex items-end justify-start bg-black/60 p-4 backdrop-blur-md sm:p-6">
             {/* Card Container */}
@@ -16,8 +17,9 @@ export default function QuotePopupCard() {
                 <button
                     className="absolute top-5 right-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-300 transition-all hover:rotate-90 hover:scale-110 hover:bg-white/20 hover:text-white focus:outline-none cursor-pointer"
                     aria-label="Close"
+                    onClick={onClose}
                 >
-                    <IoClose size={22} />
+                    <IoClose size={22} onClick={onClose} />
                 </button>
 
                 {/* Content */}
