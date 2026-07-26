@@ -4,7 +4,7 @@ import { QuoteCardProps } from '@/types/quoteCardProps.types';
 
 export default function QuotePopupCard({ onClose }: QuoteCardProps) {
     return (
-        <div className="fixed inset-0 z-50 flex items-end justify-start bg-black/60 p-4 backdrop-blur-md sm:p-6">
+        <div className="fixed inset-0 z-50 flex items-end justify-start fixed inset-0 z-50 flex items-end justify-start p-4 sm:p-6-md sm:p-6">
             {/* Card Container */}
             <div className="relative w-full max-w-md overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 p-6 shadow-2xl backdrop-blur-2xl sm:w-auto sm:p-8">
 
