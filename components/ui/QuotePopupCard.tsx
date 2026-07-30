@@ -2,7 +2,7 @@ import { IoClose } from 'react-icons/io5';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { QuoteCardProps } from '@/types/quoteCardProps.types';
 
-export default function QuotePopupCard({ onClose }: QuoteCardProps) {
+export default function QuotePopupCard({ q, a, onClose }: QuoteCardProps) {
     return (
         <div className="fixed inset-0 z-50 flex items-end justify-start p-4 sm:p-6">
             {/* Card Container */}
@@ -31,18 +31,15 @@ export default function QuotePopupCard({ onClose }: QuoteCardProps) {
 
                     {/* Quote Text */}
                     <p className="text-xl font-medium leading-relaxed tracking-wide text-gray-50 drop-shadow-sm sm:text-2xl">
-                        "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."
+                        {q}
                     </p>
 
                     {/* Author Info */}
                     <div className="mt-2 flex flex-col items-center gap-1">
                         <div className="mb-4 h-1 w-12 rounded-full bg-white/20"></div>
                         <h3 className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-xl font-bold text-transparent">
-                            Steve Jobs
+                            {a}
                         </h3>
-                        <span className="text-sm font-semibold uppercase tracking-widest text-emerald-400">
-                            Co-founder of Apple
-                        </span>
                     </div>
                 </div>
             </div>
