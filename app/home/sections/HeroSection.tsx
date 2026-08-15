@@ -24,7 +24,7 @@ export default function HeroSection() {
                     <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg lg:text-xl">
                         Discover breaking technology news, AI innovations, software engineering
                         insights, developer tools, startup updates, cybersecurity trends, cloud
-                        computing, and career opportunities—all curated in one fast, modern,
+                        computing, and career opportunities all curated in one fast, modern,
                         and developer-first platform.
                     </p>
 
