@@ -1,5 +1,6 @@
 import { DEVELOPER_PLATFORM_LINKS, PLATFORM_LINKS, SOCIAL_LINKS } from "@/data/footerLinks";
 import Link from "next/link";
+import { FaArrowRightToBracket } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -26,7 +27,7 @@ export default function Footer() {
                             developers learn, build, and grow.
                         </p>
 
-                        <div className="mt-6 flex gap-3">
+                        <div className="mt-6 flex gap-6">
                             {SOCIAL_LINKS.map((link) => {
                                 const Icon = link.icon;
                                 return (
@@ -40,6 +41,11 @@ export default function Footer() {
                                     </Link>
                                 )
                             })}
+
+                            <button className="flex h-10 w-32 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20 cursor-pointer" aria-label="Go to the contact page">
+                                <span className="mr-2">Let's Connect</span>
+                                <FaArrowRightToBracket size={16} />
+                            </button>
                         </div>
                     </div>
 
