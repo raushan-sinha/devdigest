@@ -42,10 +42,10 @@ export default function Footer() {
                                 )
                             })}
 
-                            <button className="flex h-10 w-32 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20 cursor-pointer" aria-label="Go to the contact page">
+                            <Link className="flex h-10 w-32 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-sm text-white transition hover:bg-cyan-500/20 cursor-pointer" aria-label="Go to the contact page" href='/connect'>
                                 <span className="mr-2">Let's Connect</span>
                                 <FaArrowRightToBracket size={16} />
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
