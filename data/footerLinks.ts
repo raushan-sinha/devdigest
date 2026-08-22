@@ -22,5 +22,5 @@ export const DEVELOPER_PLATFORM_LINKS: FooterLinkProps[] = [
     { id: 1, url: '/github-repo', name: 'GitHub Repos' },
     { id: 2, url: '/react-ecosystem', name: 'React Ecosystem' },
     { id: 3, url: '/system-design', name: 'System Design Docs' },
-    { id: 4, url: '/project-hub', name: 'Project Hub' }
+    { id: 4, url: '/projects-hub', name: 'Projects Hub' }
 ]
