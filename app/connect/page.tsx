@@ -52,6 +52,7 @@ export default function ConnectForm() {
                                     id="name"
                                     name="name"
                                     type="text"
+                                    autoComplete="on"
                                     placeholder="Enter your name"
                                     className="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3.5 text-sm text-white outline-none placeholder:text-slate-500 transition duration-300 focus:border-cyan-400/50 focus:bg-slate-950/80 focus:ring-2 focus:ring-cyan-400/10"
                                 />
@@ -71,6 +72,7 @@ export default function ConnectForm() {
                                     id="email"
                                     name="email"
                                     type="email"
+                                    autoComplete="on"
                                     placeholder="you@example.com"
                                     className="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3.5 text-sm text-white outline-none placeholder:text-slate-500 transition duration-300 focus:border-cyan-400/50 focus:bg-slate-950/80 focus:ring-2 focus:ring-cyan-400/10"
                                 />
@@ -144,6 +146,7 @@ export default function ConnectForm() {
                                 id="profile"
                                 name="profile"
                                 type="url"
+                                autoComplete="off"
                                 placeholder="https://github.com/yourusername"
                                 className="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3.5 text-sm text-white outline-none placeholder:text-slate-500 transition duration-300 focus:border-cyan-400/50 focus:bg-slate-950/80 focus:ring-2 focus:ring-cyan-400/10"
                             />
